@@ -4,7 +4,7 @@ import TokenFunc from '../utils/TokenFunc'
 import getRandomNumber from "../lib/getRandomNumber";
 import chooseWinner from "../lib/chooseWinner";
 
-import "../static/styles/GameBoard.css";
+import "../styles/GameBoard.css";
 import loadingGif from "../static/images/loading.gif";
 
 const GameBoard = ({ userPick, addScore, setIsPlaying }) => {
@@ -28,12 +28,7 @@ const GameBoard = ({ userPick, addScore, setIsPlaying }) => {
     }
   }
 
-  function playAgain() {
-    setIsPlaying(false);
-  }
-
   useEffect(() => {
-    setTimeout(() => {
       let pick = chooseHousePick();
 
       setHousePick(pick);
@@ -44,7 +39,11 @@ const GameBoard = ({ userPick, addScore, setIsPlaying }) => {
       setWinner(result);
 
       addScore(result);
-    }, 2000);
+
+      setTimeout(()=>{
+        setIsPlaying(false);
+      }, 2000);
+      
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -71,20 +70,13 @@ const GameBoard = ({ userPick, addScore, setIsPlaying }) => {
           )}
 
           {winner === "draw" && <h1>Es un empate.</h1>}
-
-          <div onClick={playAgain} className="play-again-button">
-            <p>JUGAR DE NUEVO</p>
-          </div>
+          
         </div>
       )}
 
       <div className="house-pick">
         <h2 className="pick-title">LA PC ESCOGIÓ</h2>
-        {isThinking ? (
-          <div className="house-pick-option glow">
-            <img className="" src={loadingGif} alt="Thinking..." />
-          </div>
-        ) : (
+        {!isThinking && (
           <div className="user-pick">
             {!(winner === "draw") ? (
               <div

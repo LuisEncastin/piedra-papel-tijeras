@@ -32,7 +32,7 @@ const Token = ({handleClick, token}) => {
   return (
     <div
     onClick={() => handleInnerClick(token)}
-      className={`Board-item option-${token}`}
+      className={`Board-item token option-${token}`}
     >
       <div className={`item-container ${token}`}>
         <img src={tokenSelected} alt={`${tokenSelected}`} />

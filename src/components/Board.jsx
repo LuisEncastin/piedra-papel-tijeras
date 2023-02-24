@@ -1,30 +1,26 @@
 import React from "react";
 
-import Token from "./Token"
+import PlayerButtons from "./PlayerButtons"
+import GameBoard from "./GameBoard";
 
-import "../static/styles/Board.css";
+import "../styles/Board.css";
 
-const Board = ({ setUserPick, setIsPlaying }) => {
-  function handleClick(option) {
-    setUserPick(option);
-    setIsPlaying(true);
-  }
+const Board = ({isPlaying, setUserPick, setIsPlaying, addScore, userPick}) => {
 
   return (
-    <main className="Board">
-
-      <Token handleClick={handleClick} token="paper"/>
-
-      <span className="line line1"></span>
-
-      <Token handleClick={handleClick} token="scissors"/>
-
-      <span className="line line2"></span>
-
-      <Token handleClick={handleClick} token="rock"/>
-
-      <span className="line line3"></span>
-    </main>
+    <div className="board">
+        <PlayerButtons setUserPick={setUserPick} setIsPlaying={setIsPlaying} user={'player'}/>
+        {isPlaying ? (
+            <GameBoard
+            setIsPlaying={setIsPlaying}
+            addScore={addScore}
+            userPick={userPick}
+            /> 
+        ) :
+        <div>|</div>
+        }
+        <PlayerButtons setUserPick={setUserPick} setIsPlaying={setIsPlaying} user={'pc'}/>        
+    </div>
   );
 };
 

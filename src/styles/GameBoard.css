@@ -7,7 +7,7 @@
 }
 
 .pick-title {
-  color: white;
+  color: black;
   font-size: 3rem;
 }
 
@@ -17,6 +17,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.token {
+  cursor: pointer;
 }
 
 .user-pick-option .Board-item {
@@ -79,7 +83,7 @@
 .play-again h1 {
   margin-bottom: 20px;
   text-transform: uppercase;
-  color: white;
+  color: black;
   font-size: 4rem;
 }
 
