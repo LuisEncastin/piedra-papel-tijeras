@@ -1,0 +1,20 @@
+.playerButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+}
+
+.playerButtons > .token {
+    margin: 2rem 0;
+}
+
+.playerButtons h2 {
+    font-size: 32px;
+}
+
+.playerButtons h3 {
+    font-size: 20px;
+}

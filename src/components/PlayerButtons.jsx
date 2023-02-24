@@ -4,38 +4,30 @@ import Token from "./Token"
 
 import "../styles/PlayerButtons.css";
 
-const Board = ({ setUserPick, setIsPlaying, user }) => {
+const Board = ({ setUserPick, setIsPlaying, isPlaying, user }) => {
   function handleClick(option) {
     setUserPick(option);
     setIsPlaying(true);
   }
 
   return (
-    <main className="Board">
+    <main className="playerButtons">
 
       {
       user === 'player' ?
       <div>
-      <h2>Tu</h2>
-      <p>Selecciona una opción</p>        
+      <h2>Tú</h2>
+      {!isPlaying ? <h3>Selecciona una opción</h3> : null }
       </div> :
       <h2>Computadora</h2>            
       }
 
+      <Token handleClick={handleClick} className="token" token="paper"/>
 
+      <Token handleClick={handleClick} className="token" token="scissors"/>
 
+      <Token handleClick={handleClick} className="token" token="rock"/>
 
-      <Token handleClick={handleClick} token="paper"/>
-
-      <span className="line line1"></span>
-
-      <Token handleClick={handleClick} token="scissors"/>
-
-      <span className="line line2"></span>
-
-      <Token handleClick={handleClick} token="rock"/>
-
-      <span className="line line3"></span>
     </main>
   );
 };

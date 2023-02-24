@@ -9,7 +9,12 @@ const Board = ({isPlaying, setUserPick, setIsPlaying, addScore, userPick}) => {
 
   return (
     <div className="board">
-        <PlayerButtons setUserPick={setUserPick} setIsPlaying={setIsPlaying} user={'player'}/>
+        <PlayerButtons
+        setUserPick={setUserPick}
+        setIsPlaying={setIsPlaying}
+        isPlaying={isPlaying}
+        user={'player'}
+        />
         {isPlaying ? (
             <GameBoard
             setIsPlaying={setIsPlaying}
@@ -17,9 +22,13 @@ const Board = ({isPlaying, setUserPick, setIsPlaying, addScore, userPick}) => {
             userPick={userPick}
             /> 
         ) :
-        <div>|</div>
+        <div className="vl"></div>
         }
-        <PlayerButtons setUserPick={setUserPick} setIsPlaying={setIsPlaying} user={'pc'}/>        
+        <PlayerButtons
+        setUserPick={setUserPick}
+        setIsPlaying={setIsPlaying}
+        user={'pc'}
+        />        
     </div>
   );
 };

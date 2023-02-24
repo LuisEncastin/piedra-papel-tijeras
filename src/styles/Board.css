@@ -1,7 +1,12 @@
 .board {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 75vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 65vh;
   }
+
+.vl {
+  border-left: 1px solid black;
+  height: 500px;
+}
