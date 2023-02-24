@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 
-import Rock from "./Rock";
-import Scissors from "./Scissors";
-import Paper from "./Paper";
+// import Rock from "./Rock";
+// import Scissors from "./Scissors";
+// import Paper from "./Paper";
+import TokenFunc from './TokenFunc'
 import getRandomNumber from "../lib/getRandomNumber";
 import chooseWinner from "../lib/chooseWinner";
 
@@ -15,25 +16,18 @@ const GameBoard = ({ userPick, addScore, setIsPlaying }) => {
   const [winner, setWinner] = useState("");
 
   function chooseHousePick() {
-    // devuelve un valor al azar entre 1 y 3
+    // returns a random nunmber between 1 and 3
     const randomPick = getRandomNumber(1, 4);
 
     switch (randomPick) {
-      case 1: {
+      case 1: 
         return "rock";
-      }
-
-      case 2: {
+      case 2: 
         return "paper";
-      }
-
-      case 3: {
+      case 3:
         return "scissors";
-      }
-
-      default: {
+      default:
         break;
-      }
     }
   }
 
@@ -64,15 +58,11 @@ const GameBoard = ({ userPick, addScore, setIsPlaying }) => {
 
         {isThinking ? (
           <div className="user-pick-option">
-            {userPick === "rock" && <Rock />}
-            {userPick === "paper" && <Paper />}
-            {userPick === "scissors" && <Scissors />}
+            <TokenFunc tokenOption={userPick} />
           </div>
         ) : (
           <div className={winner + " user-pick-option"}>
-            {userPick === "rock" && <Rock />}
-            {userPick === "paper" && <Paper />}
-            {userPick === "scissors" && <Scissors />}
+            <TokenFunc tokenOption={userPick} />
           </div>
         )}
       </div>
@@ -105,15 +95,11 @@ const GameBoard = ({ userPick, addScore, setIsPlaying }) => {
                   winner === "win" ? "lose" : "win"
                 } user-pick-option`}
               >
-                {housePick === "rock" && <Rock />}
-                {housePick === "paper" && <Paper />}
-                {housePick === "scissors" && <Scissors />}
+                <TokenFunc tokenOption={housePick} />
               </div>
             ) : (
               <div className="draw user-pick-option">
-                {housePick === "rock" && <Rock />}
-                {housePick === "paper" && <Paper />}
-                {housePick === "scissors" && <Scissors />}
+                <TokenFunc tokenOption={housePick} />
               </div>
             )}
           </div>

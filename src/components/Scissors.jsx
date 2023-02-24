@@ -15,7 +15,7 @@ const Scissors = ({ handleClick }) => {
   return (
     <div
       onClick={() => handleInnerClick("scissors")}
-      className="Board-item option-scissor"
+      className="Board-item option-scissors"
     >
       <div className="item-container scissor">
         <img src={scissors} alt="Scissors" />
