@@ -1,9 +1,9 @@
 .GameBoard {
-  margin: 0 auto 100px;
-  width: 500px;
-  height: 420px;
+  width: 50%;
+  height: 50vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .resolution-area{
@@ -11,7 +11,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  width: 80%;
+  height: 500px;
 }
 
 .pick-title {
@@ -72,7 +73,6 @@
   margin-top: 100px;
   align-self: center;
   text-align: center;
-  width: 200px;
 }
 
 .play-again h1 {
@@ -96,4 +96,9 @@
       0 0 0 120px rgba(255, 255, 255, 0.02);
     transform: scale(1.1);
   }
+}
+
+.vlgb {
+  border-left: 1px solid black;
+  height: 500px;
 }

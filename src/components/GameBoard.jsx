@@ -39,7 +39,7 @@ const GameBoard = ({ userPick, addScore, setIsPlaying }) => {
       setWinner(result);
 
       addScore(result);
-      
+      debugger;
       setTimeout(()=>{
         setIsPlaying(false);
       }, 2000);
@@ -81,6 +81,8 @@ const GameBoard = ({ userPick, addScore, setIsPlaying }) => {
           )}
         </div>
 
+        <div className="vlgb"></div>
+
         <div className="house-pick">
           <h2 className="pick-title">LA PC ESCOGIÓ</h2>
           {!isThinking && (
@@ -105,8 +107,6 @@ const GameBoard = ({ userPick, addScore, setIsPlaying }) => {
       </section>    
 
       }
-
-
 
     </div>
   );
