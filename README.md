@@ -1,5 +1,7 @@
 ## Piedra, papel o tijeras - React
 
+You can view this project at: https://luisencastin.github.io/piedra-papel-tijeras/
+
 This app was made as a technical test to apply for the front-end developer role at 'Saeko'.
 
 Notes: 
