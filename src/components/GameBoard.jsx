@@ -54,12 +54,13 @@ const GameBoard = ({ userPick, addScore, setIsPlaying }) => {
 
       addScore(result);
     }, 2000);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <div className="GameBoard">
       <div className="user-pick">
-        <h2 className="pick-title">YOU PICKED</h2>
+        <h2 className="pick-title">ESCOGISTE</h2>
 
         {isThinking ? (
           <div className="user-pick-option">
@@ -79,19 +80,19 @@ const GameBoard = ({ userPick, addScore, setIsPlaying }) => {
       {!isThinking && (
         <div className="play-again">
           {winner !== "draw" && (
-            <>{winner === "win" ? <h1>You win</h1> : <h1>You lose</h1>}</>
+            <>{winner === "win" ? <h1>¡GANASTE!</h1> : <h1>¡PERDISTE!</h1>}</>
           )}
 
-          {winner === "draw" && <h1>It's a draw</h1>}
+          {winner === "draw" && <h1>Es un empate.</h1>}
 
           <div onClick={playAgain} className="play-again-button">
-            <p>PLAY AGAIN</p>
+            <p>JUGAR DE NUEVO</p>
           </div>
         </div>
       )}
 
       <div className="house-pick">
-        <h2 className="pick-title">THE HOUSE PICKED</h2>
+        <h2 className="pick-title">LA PC ESCOGIÓ</h2>
         {isThinking ? (
           <div className="house-pick-option glow">
             <img className="" src={loadingGif} alt="Thinking..." />

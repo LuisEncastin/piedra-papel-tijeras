@@ -7,15 +7,15 @@ const Header = ({ score }) => {
     <header className="Header">
       <div className="Header-title">
         <h1>
-          Rock
+          Piedra
           <br />
-          Paper
+          Papel o
           <br />
-          Scissors
+          Tijeras
         </h1>
       </div>
       <div className="Header-score">
-        <p>SCORE</p>
+        <p>Puntuación:</p>
         <h2>{score}</h2>
       </div>
     </header>
