@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-// import Rock from "./Rock";
-// import Scissors from "./Scissors";
-// import Paper from "./Paper";
-import TokenFunc from './TokenFunc'
+import TokenFunc from '../utils/TokenFunc'
 import getRandomNumber from "../lib/getRandomNumber";
 import chooseWinner from "../lib/chooseWinner";
 

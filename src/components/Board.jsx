@@ -1,8 +1,6 @@
 import React from "react";
 
-import Paper from "./Paper";
-import Rock from "./Rock";
-import Scissors from "./Scissors";
+import Token from "./Token"
 
 import "../static/styles/Board.css";
 
@@ -14,15 +12,16 @@ const Board = ({ setUserPick, setIsPlaying }) => {
 
   return (
     <main className="Board">
-      <Paper handleClick={handleClick} />
+
+      <Token handleClick={handleClick} token="paper"/>
 
       <span className="line line1"></span>
 
-      <Scissors handleClick={handleClick} />
+      <Token handleClick={handleClick} token="scissors"/>
 
       <span className="line line2"></span>
 
-      <Rock handleClick={handleClick} />
+      <Token handleClick={handleClick} token="rock"/>
 
       <span className="line line3"></span>
     </main>
