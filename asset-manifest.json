@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/LuisEncastin/piedra-papel-tijeras/static/css/main.03493c2b.chunk.css",
-    "main.js": "/LuisEncastin/piedra-papel-tijeras/static/js/main.5fdaca0b.chunk.js",
-    "main.js.map": "/LuisEncastin/piedra-papel-tijeras/static/js/main.5fdaca0b.chunk.js.map",
-    "runtime-main.js": "/LuisEncastin/piedra-papel-tijeras/static/js/runtime-main.1f0651bb.js",
-    "runtime-main.js.map": "/LuisEncastin/piedra-papel-tijeras/static/js/runtime-main.1f0651bb.js.map",
-    "static/js/2.8a8f32c0.chunk.js": "/LuisEncastin/piedra-papel-tijeras/static/js/2.8a8f32c0.chunk.js",
-    "static/js/2.8a8f32c0.chunk.js.map": "/LuisEncastin/piedra-papel-tijeras/static/js/2.8a8f32c0.chunk.js.map",
-    "index.html": "/LuisEncastin/piedra-papel-tijeras/index.html",
-    "static/css/main.03493c2b.chunk.css.map": "/LuisEncastin/piedra-papel-tijeras/static/css/main.03493c2b.chunk.css.map",
-    "static/js/2.8a8f32c0.chunk.js.LICENSE.txt": "/LuisEncastin/piedra-papel-tijeras/static/js/2.8a8f32c0.chunk.js.LICENSE.txt",
-    "static/media/icon-paper.8b57a6b1.svg": "/LuisEncastin/piedra-papel-tijeras/static/media/icon-paper.8b57a6b1.svg",
-    "static/media/icon-rock.476e90a9.svg": "/LuisEncastin/piedra-papel-tijeras/static/media/icon-rock.476e90a9.svg",
-    "static/media/icon-scissors.3b1a5d7e.svg": "/LuisEncastin/piedra-papel-tijeras/static/media/icon-scissors.3b1a5d7e.svg"
+    "main.css": "./static/css/main.03493c2b.chunk.css",
+    "main.js": "./static/js/main.5fdaca0b.chunk.js",
+    "main.js.map": "./static/js/main.5fdaca0b.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.ae60b97c.js",
+    "runtime-main.js.map": "./static/js/runtime-main.ae60b97c.js.map",
+    "static/js/2.8a8f32c0.chunk.js": "./static/js/2.8a8f32c0.chunk.js",
+    "static/js/2.8a8f32c0.chunk.js.map": "./static/js/2.8a8f32c0.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.03493c2b.chunk.css.map": "./static/css/main.03493c2b.chunk.css.map",
+    "static/js/2.8a8f32c0.chunk.js.LICENSE.txt": "./static/js/2.8a8f32c0.chunk.js.LICENSE.txt",
+    "static/media/icon-paper.8b57a6b1.svg": "./static/media/icon-paper.8b57a6b1.svg",
+    "static/media/icon-rock.476e90a9.svg": "./static/media/icon-rock.476e90a9.svg",
+    "static/media/icon-scissors.3b1a5d7e.svg": "./static/media/icon-scissors.3b1a5d7e.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1f0651bb.js",
+    "static/js/runtime-main.ae60b97c.js",
     "static/js/2.8a8f32c0.chunk.js",
     "static/css/main.03493c2b.chunk.css",
     "static/js/main.5fdaca0b.chunk.js"
